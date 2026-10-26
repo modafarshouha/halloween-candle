@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiment #1: Halloween Night</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="notebook">
+    <header>
+      <p class="kicker">Lab Notebook · Entry 008</p>
+      <h1>Experiment #1: Halloween Night</h1>
+      <p class="date">October 31</p>
+    </header>
+
+    <section class="candle-wrap">
+      <div id="candle" class="candle">
+        <span class="flame"></span>
+        <span class="wick"></span>
+        <span class="wax"></span>
+      </div>
+      <button id="relight" class="relight" aria-label="Relight the candle">🔥</button>
+      <p>Matches struck: <strong id="count">0</strong></p>
+    </section>
+
+    <section class="entry">
+      <h2>Observation</h2>
+      <p>Halloween night, 2019. Setting: a GDG Budapest meetup. Among a room full of developers, one person stood out. I found that encouraging.</p>
+    </section>
+
+    <section class="entry">
+      <h2>Hypothesis</h2>
+      <p>The candle is still lit.</p>
+    </section>
+
+    <section class="entry">
+      <h2>Data</h2>
+      <ul>
+        <li>Duration of experiment: <strong id="elapsed">--</strong> days and counting. Candle still lit.</li>
+        <li>Days until next Halloween: <strong id="days">--</strong></li>
+        <li>Time since the last conversation: longer than it should have been.</li>
+        <li>Times I have rehearsed a message and then deleted it: too many to count.</li>
+        <li>Times Thing would have approved of this experiment: at least one, and possibly all of them.</li>
+      </ul>
+    </section>
+
+    <section class="entry locked" id="locked">
+      <h2>Conclusion <span class="lock-tag">Locked</span></h2>
+      <p>Fill the grid. A secret word is hidden inside it.</p>
+      <form id="puzzle-form">
+        <div id="grid" class="grid"></div>
+        <div class="clues">
+          <h3>Across</h3>
+          <ul id="clues-across"></ul>
+          <h3>Down</h3>
+          <ul id="clues-down"></ul>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <p class="feedback" id="feedback" aria-live="polite"></p>
+    </section>
+
+    <section class="entry revealed" id="conclusion" hidden>
+      <h2>Conclusion</h2>
+      <p>The candle never went out. Both hypotheses hold up: you are smart, and I am still curious.</p>
+      <p>I would like to run one more experiment when you are here. A walk, a coffee, and a long, unnecessary debate about something trivial. Would you be willing to take part?</p>
+      <p class="signature">Signed, the other scientist.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
